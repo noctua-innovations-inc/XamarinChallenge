@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background_gradientrose"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+        <TextView
+            android:id="@+id/account_create_lbl_title"
+            android:text="New Account"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp" />
+        <EditText
+            android:id="@+id/account_create_txt_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:capitalize="words"
+        />
+        <EditText
+            android:id="@+id/account_create_txt_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:capitalize="words"
+    />
+        <EditText
+            android:id="@+id/account_create_txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Userame"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:capitalize="characters"
+    />
+        <EditText
+            android:id="@+id/account_create_txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="textPassword" 
+    />
+        <EditText
+            android:id="@+id/account_create_txt_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="phone" 
+    />
+        <EditText
+            android:id="@+id/account_create_txt_servicestartdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Service Start Date"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="date" 
+    />
+        <Button
+            android:id="@+id/account_create_btn_createaccount"
+            android:text="Create Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:enabled="false"
+     />
+    </LinearLayout>
+</ScrollView>

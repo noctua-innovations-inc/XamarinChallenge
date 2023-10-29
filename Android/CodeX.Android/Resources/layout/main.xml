@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradientrose"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:hapticFeedbackEnabled="false"
+    >
+
+        <TextView
+            android:id="@+id/sign_in_lbl_title"
+            android:text="Sign In"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp" />
+
+        <EditText
+            android:id="@+id/sign_in_txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:layout_constraintTop_toBottomOf="@id/sign_in_lbl_title"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="text"
+            android:capitalize="characters"
+            android:selectAllOnFocus="true"
+        />
+
+        <EditText
+            android:id="@+id/sign_in_txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:layout_constraintTop_toBottomOf="@id/sign_in_txt_username"
+            android:background="@drawable/border"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+        />
+
+        <Button
+            android:id="@+id/sign_in_btn_new_user"
+            android:text="New User? Create Account"
+            app:layout_constraintTop_toBottomOf="@id/sign_in_btn_sign_in"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+        />
+
+        <Button
+            android:id="@+id/sign_in_btn_sign_in"
+            android:text="Sign In"
+            app:layout_constraintTop_toBottomOf="@id/sign_in_txt_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:enabled="false"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

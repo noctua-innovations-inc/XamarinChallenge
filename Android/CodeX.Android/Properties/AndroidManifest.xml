@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.5" package="CodeX.Android" android:installLocation="auto" android:versionCode="5">
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="29" />
+	<application android:label="CodeX" android:theme="@style/MainTheme" android:icon="@drawable/Icon"></application>
+</manifest>
